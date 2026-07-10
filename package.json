@@ -1,0 +1,27 @@
+{
+  "name": "comuros",
+  "version": "0.1.0",
+  "description": "CoMuRoS (arXiv:2511.22354) reverse-engineered on Mastra: hierarchical task classification, supervisor/sub-agent planning, event-driven replanning via suspend/resume, mocked robot fleet over REST webhooks.",
+  "type": "module",
+  "scripts": {
+    "dev": "mastra dev",
+    "build": "mastra build",
+    "fleet": "npx tsx sim/fleet.ts",
+    "demo": "npx tsx sim/demo.ts",
+    "demo:irrelevant": "npx tsx sim/demo.ts --scenario irrelevant"
+  },
+  "keywords": ["mastra", "multi-robot", "llm", "replanning"],
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^26.1.0",
+    "mastra": "^1.18.2",
+    "tsx": "^4.19.0",
+    "typescript": "^6.0.3"
+  },
+  "dependencies": {
+    "@mastra/core": "^1.50.1",
+    "@mastra/libsql": "^1.15.1",
+    "@mastra/memory": "^1.22.2",
+    "zod": "^4.4.3"
+  }
+}
